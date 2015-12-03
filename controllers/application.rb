@@ -1,6 +1,7 @@
 class ApplicationController < Sinatra::Base
-  require 'Bundler'
+  require 'bundler'
   Bundler.require
+
   ActiveRecord::Base.establish_connection(
     :database => 'shopping_db',
     :adapter => 'postgresql'

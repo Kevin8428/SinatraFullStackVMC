@@ -10,6 +10,7 @@ class ItemController < ApplicationController
   end
 
   post '/create' do
+    p params
     @item = Item.new
     @item.name = params[:name] # left side ties to table field name, right to erb view
     @item.quantity = params[:quantity]
