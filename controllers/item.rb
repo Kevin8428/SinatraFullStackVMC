@@ -29,7 +29,7 @@ class ItemController < ApplicationController
     @item.name = params[:name]
     @item.quantity = params[:quantity]
     @item.save
-    erb :read
+    erb :update
   end
 
   get '/destroy/:id' do
